@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'lazy_loading.dart';
+import 'package:get/get.dart';
+import 'lazy_loading/lazy_loading.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: LazyLoading(),
+      // home: Home(),
     );
   }
 }
